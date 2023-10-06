@@ -54,7 +54,7 @@ const Login = () => {
 
 
 
-        fetch(`http://localhost:5000/login`, {
+        fetch(`https://online-skill-server.vercel.app/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -16,7 +16,7 @@ const CourseDetail = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/courses/${courseId}`)
+        fetch(`https://online-skill-server.vercel.app/courses/${courseId}`)
             .then(res => res.json())
             .then(data => setCourseDetail(data))
     }, [courseId]);
@@ -42,7 +42,7 @@ const CourseDetail = () => {
         if (proceed) {
 
 
-            fetch('http://localhost:5000/order', {
+            fetch('https://online-skill-server.vercel.app/order', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

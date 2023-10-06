@@ -17,7 +17,7 @@ const useOrders = () => {
 
         if (user) {
 
-            fetch(`http://localhost:5000/order?email=${email}`, {
+            fetch(`https://online-skill-server.vercel.app/order?email=${email}`, {
 
                 method: 'GET',
                 headers: {

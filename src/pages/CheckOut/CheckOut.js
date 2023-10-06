@@ -11,7 +11,7 @@ const CheckOut = () => {
         const proceed = window.confirm('are you sure you want to delete');
 
         if (proceed) {
-            fetch(`http://localhost:5000/order/${id}`, {
+            fetch(`https://online-skill-server.vercel.app/order/${id}`, {
                 method: 'DELETE'
             })
 
